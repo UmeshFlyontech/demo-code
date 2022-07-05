@@ -1,0 +1,167 @@
+.body {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #08bccde0;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .header {
+    display: block;
+    width: 100%;
+    height: 42%;
+    background-color: #08bccde0;
+
+    img {
+      width: 32%;
+      position: relative;
+      top: 35px;
+    }
+  }
+
+  .main {
+    display: block;
+    width: 100%;
+    height: 18%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+
+    h4 {
+      font-size: 1.6rem;
+      color: #008ea2;
+      font-weight: 900;
+    }
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    height: 40%;
+
+    .footer-left {
+      width: 100%;
+      padding-left: 25px;
+
+      p {
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      .anni-count {
+        width: 100%;
+
+        span {
+          position: relative;
+          top: -167px;
+          font-size: 1.5rem;
+          font-weight: 700;
+          left: 70px;
+          color: #3e8aa8;
+        }
+
+        h6 {
+          position: relative;
+          margin-left: 1.5rem;
+          font-weight: 700;
+        }
+
+        h4 {
+          position: relative;
+          font-weight: 900;
+          color: #008ea2;
+          left: 70px;
+          top: -70px;
+        }
+
+        img {
+          width: 48%;
+          left: -36px;
+          position: relative;
+        }
+      }
+
+      h2 {
+        position: relative;
+        top: -69px;
+      }
+    }
+
+    .footer-right {
+      padding: 10px 5px;
+      width: 100%;
+
+      p {
+        position: relative;
+        font-size: 1.3rem;
+        font-weight: 700;
+        left: 23px;
+      }
+
+      h2 {
+        margin-left: 1.5rem;
+      }
+
+      label {
+        font-size: small;
+        margin-left: 1.5rem;
+      }
+
+      .company-logo {
+        width: 100%;
+        text-align: center;
+
+        img {
+          height: 65px;
+          width: 50%;
+          position: relative;
+          left: -48px;
+          top: 54px;
+        }
+      }
+    }
+  }
+}
+
+
+
+<div
+  class="body d-flex align-items-start flex-column bd-highlight mb-3"
+  id="image-section"
+>
+  <div class="p-2 bd-highlight header text-center">
+    <img
+      src="../../assets/img/usersss.png"
+      alt="Cinque Terre"
+    />
+  </div>
+  <div class="mb-auto p-2 bd-highlight main">
+    <h2>Sudip Khokhar</h2>
+    <h4>HR Manager</h4>
+  </div>
+  <div class="p-2 bd-highlight footer">
+    <div class="footer-left">
+      <h6>HAPPY</h6>
+      <div class="anni-count">
+        <img src="../../assets/img/numbers/1-removebg-preview.png" alt="" />
+        <h4>WORK</h4>
+        <span>st</span>
+      </div>
+      <h2>ANNIVERSARY!</h2>
+    </div>
+    <div class="footer-right">
+      <p>Congratulations!</p>
+      <label>Thanks for being a part of Flyontech Family</label>
+      <div class="company-logo">
+        <img src="../assets/img/FlyOnTech_rectangle_transparent.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-primary p-1" (click)="generateImage()">
+    Create Work Anniversary Image
+  </button>
+</div>

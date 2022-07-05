@@ -1,0 +1,142 @@
+<div class="body d-md-flex justify-content-between" id="image-section">
+  <div class="h-100 sidebar-left"></div>
+  <div class="h-100 body-part">
+    <div class="d-flex justify-content-between social">
+      <div>
+        <i class="bi bi-facebook mx-1"></i>
+        <i class="bi bi-instagram mx-1"></i>
+        <i class="bi bi-linkedin mx-1"></i>
+        <i class="bi bi-whatsapp mx-1"></i>
+      </div>
+      <div class="mx-1 contact">
+        <b>(+91) 63535-43835 | (+91) 95372-56159</b>
+      </div>
+    </div>
+    <div class="company-logo">
+      <img src="../assets/img/FlyOnTech_rectangle_transparent.png" alt="" />
+    </div>
+    <div class="row festival-body my-4">
+      <div class="col-6">
+        <div class="festival-body-left">
+          <div class="title">आषाढ़ी बीज</div>
+          <div class="desc">
+            Let us bow to the gods this Rath Yatra, to pray for better time and
+            description of evil from earth
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="festival-body-right">
+          <img src="../assets/img/festival.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="hr-info">
+      <div class="footer px-2">
+        hr.flyontechsolution@hmail.com <br />
+        304, Angle Square, B/s Royal Square, Silver Business Point, VIP Circle,
+        Utran, Surat - 395105
+      </div>
+    </div>
+  </div>
+  <div class="h-100 sidebar-right"></div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-primary p-1" (click)="generateImage()">
+    Create Image
+  </button>
+</div>
+
+
+
+
+
+
+
+.body {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #008ea2;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.social {
+  margin-top: 4px;
+}
+
+.sidebar-left {
+  width: 40px;
+  background-color: #008ea2;
+  background-image: linear-gradient(#003359, #00a9ba)
+}
+.sidebar-right {
+  width: 40px;
+  background-color: #008ea2;
+  background-image: linear-gradient(#003359, #00a9ba)
+}
+
+.body-part {
+  width: 100%;
+  background-color: #fff;
+}
+
+.contact {
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.company-logo {
+  img {
+    height: 70px;
+    width: 140px;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+}
+
+.festival-body {
+  text-align: center;
+
+  .festival-body-left {
+    margin: 40px 15px;
+
+    .title {
+      color: #6a2649;
+      font-size: xx-large;
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: large;
+      font-weight: bolder;
+    }
+  }
+
+  .festival-body-right {
+    img {
+      height: 300px;
+      width: 200px;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.hr-info {
+  .card {
+    margin-top: 50px !important;
+  }
+
+  .footer {
+    height: 50px;
+    // background-color: #008ea2;
+    text-align: center;
+    font-size: 11px;
+    font-weight: bolder;
+    margin-top: 4rem !important;
+  }
+}
