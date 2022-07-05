@@ -1,0 +1,140 @@
+.body {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #008ea2;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sidebar-left {
+  width: 100%;
+}
+
+.sidebar-center {
+  width: 60px;
+  height: 466px;
+  background-image: linear-gradient(#0099ad, #0098ac)
+}
+
+.sidebar-right {
+  width: 100%;
+}
+
+.body-part {
+  width: 100%;
+  background-color: #fff;
+  background-image: url(../../assets/img/bbbg.png);
+  background-repeat: no-repeat;
+  background-size: 285px 40px;
+}
+
+.contact {
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.company-logo {
+  text-align: end;
+
+  img {
+    height: 60px;
+    width: 118px;
+    margin-left: 5px;
+    margin-right: 25px;
+    margin-top: 6px;
+  }
+
+}
+
+
+.festival-body-left {
+  text-align: center;
+  position: relative;
+  top: -80px;
+
+  .title {
+    color: #6a2649;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif !important;
+    letter-spacing: 5px;
+    position: relative;
+    left: -65px;
+  }
+
+  span {
+    color: #6a2649;
+    font-size: 46px;
+    font-weight: bolder;
+    margin-left: 56px;
+    font-family: "Pacifico", cursive !important;
+    padding-left: 10px !important;
+    letter-spacing: 4px !important;
+    position: relative;
+    top: -15px;
+  }
+
+  .desc {
+    font-size: large;
+    font-weight: bolder;
+
+  }
+}
+
+.festival-body-right {
+  img {
+    width: 100%;
+    height: 370px;
+    position: relative;
+    top: -22px;
+    z-index: 5;
+  }
+
+  .person-name {
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px;
+  }
+}
+
+.cross-line {
+  position: relative;
+  width: 88%;
+  top: -109px;
+  height: 30px;
+  background-image: linear-gradient(#003359, #003359) !important;
+}
+
+.hr-info {
+
+  background-image: linear-gradient(#0098ac, #00a9ba) !important;
+  position: relative;
+  bottom: 30px;
+
+  .card {
+    margin-top: 50px !important;
+  }
+
+  .footer {
+    height: 100px;
+
+    padding-top: 15px;
+    color: #fff;
+
+    .address {
+      text-align: left;
+      font-size: 11px;
+      font-weight: bolder;
+    }
+
+    .social-icon {
+      align-items: center;
+      text-align: end;
+      width: 150px;
+      margin-top: 8px;
+      font-size: 19px !important;
+    }
+
+  }
+}

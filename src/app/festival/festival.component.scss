@@ -1,0 +1,112 @@
+.body {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #008ea2;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sidebar-left {
+  width: 40px;
+  // background-color: #008ea2;
+  background-image: linear-gradient(#003359, #00a9ba)
+}
+
+.sidebar-right {
+  width: 40px;
+  // background-color: #008ea2;
+  background-image: linear-gradient(#003359, #00a9ba)
+}
+
+.body-part {
+  width: 100%;
+  background-color: #fff;
+  background-image: url(../../assets/img/bg.png);
+  // background-image: url(https://i.pinimg.com/564x/3c/3a/4f/3c3a4f0af2527d10e820255470814b2b.jpg);
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: 250px 261px;
+}
+
+.contact {
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.company-logo {
+  text-align: end;
+
+  .right-img {
+    height: 70px;
+    width: 70px;
+  }
+
+  img {
+    height: 60px;
+    width: 118px;
+    margin-left: 5px;
+    margin-right: 25px;
+    margin-top: 6px;
+  }
+}
+
+.festival-body {
+  text-align: center;
+
+  .festival-body-left {
+    margin: 40px 15px;
+
+    .title {
+      color: #6a2649;
+      font-size: xx-large;
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: large;
+      font-weight: bolder;
+    }
+  }
+
+  .festival-body-right {
+    img {
+      height: 300px;
+      width: 200px;
+      margin-left: 5px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.hr-info {
+  // background-color: #00a3b5;
+  background-image: linear-gradient(#0098ac, #00a9ba) !important;
+
+  .card {
+    margin-top: 50px !important;
+  }
+
+  .footer {
+    height: 100px;
+    margin-top: 4.5rem !important;
+    padding-top: 15px;
+    color: #fff;
+
+    .address {
+      text-align: left;
+      font-size: 11px;
+      font-weight: bolder;
+    }
+
+    .social-icon {
+      align-items: center;
+      text-align: end;
+      width: 150px;
+      margin-top: 8px;
+      font-size: 19px !important;
+    }
+
+  }
+}

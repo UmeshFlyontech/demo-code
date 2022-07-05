@@ -1,0 +1,73 @@
+<div class="d-flex justify-content-center">
+  <div class="body d-md-flex justify-content-between" id="image-section">
+    <div class="h-100 sidebar-left"></div>
+    <div class="h-100 body-part">
+      <div class="company-logo">
+        <!-- <img src="../assets/img/bg.png" class="right-img" alt="" /> -->
+        <img src="../assets/img/FlyOnTech_rectangle_transparent.png" alt="" />
+      </div>
+      <div class="row festival-body my-4">
+        <div class="col-6">
+          <div class="festival-body-left">
+            <div class="title" (dblclick)="isEditTitle = true" (contextmenu)="isEditTitle = false">
+              <div *ngIf="isEditTitle">
+                <input type="text" [(ngModel)]="title" />
+              </div>
+              <div *ngIf="!isEditTitle">
+                {{ title }}
+              </div>
+            </div>
+            <div class="desc" (dblclick)="isEditMessage = true" (contextmenu)="isEditMessage = false">
+              <div *ngIf="isEditMessage">
+                <textarea rows="4" type="text" [(ngModel)]="message"></textarea>
+              </div>
+              <div *ngIf="!isEditMessage">
+                {{ message }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="festival-body-right">
+            <input
+              type="file"
+              accept="image/*"
+              #file
+              style="display: none"
+              (change)="readURL($event)"
+            />
+            <img id="blah"
+              [src]="imageSrc || '../assets/img/festival.jpg'"
+              class="img-fluid"
+              alt=""
+              (click)="file.click()" />
+          </div>
+        </div>
+      </div>
+      <div class="hr-info">
+        <div class="footer px-2 d-flex justify-content-between">
+          <div class="address">
+            (+91) 63535-43835 | (+91) 95372-56159
+            <br />
+            hr.flyontechsolution@hmail.com <br />
+            304, Angle Square, B/s Royal Square, VIP Circle, Utran, Surat -
+            395105
+          </div>
+          <div class="social-icon">
+            <i class="bi bi-facebook mx-1"></i>
+            <i class="bi bi-instagram mx-1"></i>
+            <i class="bi bi-linkedin mx-1"></i>
+            <i class="bi bi-whatsapp mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-100 sidebar-right"></div>
+  </div>
+</div>
+
+<div class="text-center p-2">
+  <button class="btn btn-primary p-1" (click)="generateImage()">
+    Create Festival Image
+  </button>
+</div>

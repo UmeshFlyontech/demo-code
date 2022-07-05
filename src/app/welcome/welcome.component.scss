@@ -1,0 +1,139 @@
+.body {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #08bccde0;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .body-left {
+    width: 50%;
+    height: 100%;
+    background-color: #08bccde0;
+    // position: relative;
+
+    table,
+    tr,
+    td {
+      position: relative;
+      border: 1px solid #fff;
+      padding: 14px;
+      z-index: 1;
+      bottom: -55px;
+      left: 6px;
+    }
+
+    .diamond1 {
+      position: relative;
+      width: 10px;
+      color: #fff;
+      left: 217px;
+      top: -316px;
+    }
+
+    .diamond2 {
+      position: relative;
+      width: 10px;
+      color: #fff;
+      top: 186px;
+      left: 119px;
+    }
+
+    .diamond3 {
+      position: relative;
+      width: 10px;
+      color: #fff;
+      top: -221px;
+      left: -12px;
+    }
+
+    .employee-pic {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: center;
+      position: relative;
+      top: -336px;
+      z-index: 2;
+
+      img {
+        height: 238px;
+        width: 274px;
+        position: relative;
+        left: 10px;
+      }
+
+      p {
+        padding: 11px 46px;
+        background-color: black;
+        color: white;
+        font-size: 17px;
+      }
+
+      label {
+        padding: 7px 11px;
+        background-color: white;
+        color: black;
+        position: relative;
+        top: -22px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .body-right {
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    text-align: center;
+    position: relative;
+    position: relative;
+    z-index: 2;
+
+    .title {
+      color: #fff;
+      position: relative;
+      top: 153px;
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      h1 {
+        margin-bottom: 0;
+        color: #08bccde0;
+      }
+    }
+
+    .company-logo {
+      position: relative;
+      // top: -5px;
+
+      h2 {
+        color: #fff;
+        position: relative;
+        font-size: 21px;
+        top: 307px;
+        left: 3px;
+      }
+
+      h3 {
+        color: #fff;
+        position: relative;
+        font-size: 13px;
+        top: 301px;
+        left: 50px;
+      }
+
+      img {
+        height: 122px;
+        width: 122px;
+        position: relative;
+        top: 160px;
+        left: -51px;
+      }
+    }
+  }
+}

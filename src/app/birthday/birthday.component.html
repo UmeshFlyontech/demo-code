@@ -1,0 +1,81 @@
+
+<div class="d-flex justify-content-center">
+  <div class="body d-md-flex justify-content-between" id="image-section">
+    <!-- <div class="h-100 sidebar-left"></div> -->
+    <div class="body-part" (contextmenu)="isEditMessage = false">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <div class="h-100 sidebar-left">
+          <div class="festival-body-left">
+            <div class="title">HAPPY</div>
+            <span>Birthday</span>
+            <div class="desc" (dblclick)="isEditMessage = true">
+              <div *ngIf="isEditMessage">
+                <textarea rows="4" type="text" [(ngModel)]="message"></textarea>
+              </div>
+              <div *ngIf="!isEditMessage">
+                {{ message }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-center"></div>
+        <div class="h-100 sidebar-left">
+          <div class="festival-body-right">
+            <input
+              type="file"
+              accept="image/*"
+              #file
+              style="display: none"
+              (change)="readURL($event)"
+            />
+            <img
+              id="blah"
+              [src]="imageSrc || '../assets/img/birthday.jpg'"
+              class="img-fluid"
+              alt=""
+              (click)="file.click()"
+            />
+            <div class="person-name mb-4" (dblclick)="isEditName = true">
+              <div *ngIf="isEditName">
+                <input
+                  type="text"
+                  autofocus
+                  contenteditable="true"
+                  [(ngModel)]="employeeName"
+                  (contextmenu)="isEditName = false"
+                />
+              </div>
+              <div *ngIf="!isEditName">
+                {{ employeeName }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cross-line"></div>
+      <div class="hr-info">
+        <div class="footer px-2 d-flex justify-content-between">
+          <div class="address">
+            (+91) 63535-43835 | (+91) 95372-56159
+            <br />
+            hr.flyontechsolution@hmail.com <br />
+            304, Angle Square, B/s Royal Square, VIP Circle, Utran, Surat - 395105
+          </div>
+          <div class="social-icon">
+            <i class="bi bi-facebook mx-1"></i>
+            <i class="bi bi-instagram mx-1"></i>
+            <i class="bi bi-linkedin mx-1"></i>
+            <i class="bi bi-whatsapp mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="h-100 sidebar-right"></div> -->
+  </div>
+</div>
+
+<div class="text-center p-2">
+  <button class="btn btn-primary p-1" (click)="generateImage()">
+    Create Birthday Image
+  </button>
+</div>

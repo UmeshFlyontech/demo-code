@@ -1,0 +1,165 @@
+.body {
+  position: relative;
+  width: 600px;
+  height: 550px;
+  border: 1px solid #08bccde0;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .header {
+    display: block;
+    width: 100%;
+    height: 42%;
+    background-color: #08bccde0;
+
+    img {
+      width: 34%;
+      position: relative;
+      top: 35px;
+    }
+  }
+
+  .main {
+    display: block;
+    width: 100%;
+    height: 18%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+
+    h4 {
+      font-size: 1.6rem;
+      color: #008ea2;
+      font-weight: 900;
+    }
+  }
+
+  .footer {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 40%;
+
+    .ballonsbg1 {
+      position: relative;
+      z-index: 1;
+      left: 97px;
+      top: 34px;
+      height: 27px;
+      width: 14px;
+    }
+
+    .ballonsbg2 {
+      position: relative;
+      z-index: 1;
+      top: 175px;
+      left: 213px;
+      height: 27px;
+      width: 14px;
+    }
+
+    .ballonsbg3 {
+      position: relative;
+      z-index: 1;
+      left: 48px;
+      top: 57px;
+      height: 27px;
+      width: 14px;
+    }
+
+    .ballonsbg4 {
+      position: relative;
+      z-index: 1;
+      left: 178px;
+      top: 195px;
+      height: 27px;
+      width: 14px;
+    }
+
+    .footer-left {
+      width: 100%;
+      padding-left: 25px;
+      position: relative;
+      top: -29px;
+
+      p {
+        font-size: 20px;
+        font-weight: 900;
+      }
+
+      .anni-count {
+        width: 100%;
+
+        span {
+          position: relative;
+          top: -167px;
+          font-size: 1.5rem;
+          font-weight: 700;
+          left: 70px;
+          color: #3e8aa8;
+        }
+
+        h6 {
+          position: relative;
+          margin-left: 1.5rem;
+          font-weight: 700;
+        }
+
+        h4 {
+          position: relative;
+          font-weight: 900;
+          color: #008ea2;
+          left: 70px;
+          top: -70px;
+        }
+
+        img {
+          width: 48%;
+          left: -36px;
+          position: relative;
+        }
+      }
+
+      h2 {
+        position: relative;
+        top: -69px;
+      }
+    }
+
+    .footer-right {
+      width: 100%;
+      position: relative;
+      top: -24px;
+
+      p {
+        position: relative;
+        font-size: 1.3rem;
+        font-weight: 700;
+        left: 23px;
+      }
+
+      h2 {
+        margin-left: 1.5rem;
+      }
+
+      label {
+        font-size: small;
+        margin-left: 1.5rem;
+      }
+
+      .company-logo {
+        width: 100%;
+        text-align: center;
+
+        img {
+          height: 65px;
+          width: 50%;
+          position: relative;
+          left: -48px;
+          top: 52px;
+        }
+      }
+    }
+  }
+}
